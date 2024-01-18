@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Repositories\UserRepository;
+use App\Repositories\UserRepository\UserRepository;
 use App\Http\Requests\UserFormRequest;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -32,6 +32,7 @@ class RegisterController extends Controller
 
     protected function create(array $data)
     {
+      
         return $this->userRepository->create($data);
         
     }

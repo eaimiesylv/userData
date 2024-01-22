@@ -34,8 +34,8 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
        
-        $userData = $this->userRepository->create($data);
-         event(new UserHasRegistered($userData));
+        return $this->userRepository->create($data);
+        // event(new UserHasRegistered($userData));
       
         
     }

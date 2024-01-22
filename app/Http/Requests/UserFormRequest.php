@@ -16,7 +16,7 @@ class UserFormRequest
             'email' => ['required', 'string', 'email', 'max:150', 'unique:users'],
             'password' => ['required', 'string', 'min:8','max:150', 'confirmed'],
             // 'profile_image' => ['image', 'mimes:jpeg,png,jpg,gif', 'max:2048'],
-            'profile_image' =>['max:150'],
+            'profile_image' =>['max:2008'],
         ]);
     }
     

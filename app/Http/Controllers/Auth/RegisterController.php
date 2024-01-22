@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Repositories\UserRepository\UserRepository;
 use App\Http\Requests\UserFormRequest;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Events\UserHasRegistered;
 
 use Illuminate\Support\Facades\Validator;
 
@@ -32,8 +33,10 @@ class RegisterController extends Controller
 
     protected function create(array $data)
     {
+       
+        $userData = $this->userRepository->create($data);
+         event(new UserHasRegistered($userData));
       
-        return $this->userRepository->create($data);
         
     }
 }

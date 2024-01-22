@@ -1,4 +1,4 @@
-![image](https://github.com/eaimiesylv/userData/assets/50324524/8175501d-0a8c-49c7-bda1-5c3967d3cd82)
+
 
 
 **Project Description**
@@ -57,6 +57,9 @@ Rename .env.example to .env Create a database using the name specific in the .en
 1.php artisan serve
 
 2.npm run dev
+
+** View Registered user **
+![image](https://github.com/eaimiesylv/userData/assets/50324524/8175501d-0a8c-49c7-bda1-5c3967d3cd82)
 
 3.open the link generated in step 1
 
